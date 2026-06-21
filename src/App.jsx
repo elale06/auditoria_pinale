@@ -24,7 +24,7 @@ function App() {
       <main className="max-w-5xl mx-auto space-y-10">
         <section id="resumen"><Resumen /></section>
         <section id="activos"><Activos /></section>
-        
+
         <h2 className="text-4xl font-bold text-center mt-12 mb-6 text-gray-800 border-b-2 pb-4">Análisis de Vulnerabilidades</h2>
         <section id="inyeccion-sql"><InyeccionSQL /></section>
         <section id="xss"><XSS /></section>
@@ -38,6 +38,21 @@ function App() {
         <h2 className="text-4xl font-bold text-center mt-12 mb-6 text-gray-800 border-b-2 pb-4">Anexos</h2>
         <section id="prompts"><Prompts /></section>
       </main>
+
+      <footer className="max-w-5xl mx-auto mt-16 pt-6 border-t border-gray-300 text-center pb-8">
+        <p className="text-gray-600">
+          Auditoría de seguridad realizada por{' '}
+          <a
+            href="https://github.com/elale06"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-blue-700 hover:text-blue-900 transition-colors"
+          >
+            Alexander Pinto
+          </a>
+        </p>
+      </footer>
+
     </div>
   );
 }
